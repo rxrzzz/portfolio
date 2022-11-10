@@ -36,9 +36,8 @@ const Home: NextPage = () => {
             <span className="block">Hello.</span> I&apos;m Adeleye Temiloluwa.
           </h1>
           <h2 className="text-lg font-medium opacity-60 md:text-xl">
-            I&apos;m a fullstack software engineer based in Abeokuta and
-            I&apos;ve been writing code and pushing HTML div tags for the past
-            15 months.
+            I&apos;m a fullstack software engineer based in Abeokuta. I&apos;ve
+            been writing web dev code and pushing HTML div tags for the past 15 months.
           </h2>
           <div className="mt-4 flex">
             <Link href="https://github.com/temiloluwa-js">
@@ -150,13 +149,16 @@ const Home: NextPage = () => {
           />
         </div>
       </section>
-      <section className="lg:my-12 my-2  mx-auto h-[80vh]  w-11/12 max-w-[90rem] font-author">
-        <h1 className="lg:mt-48 mt-24 mb-4  text-3xl font-medium opacity-80 lg:text-5xl">
+      <section className="my-2 mx-auto  h-[80vh] w-11/12  max-w-[90rem] font-author lg:my-12">
+        <h1 className="mt-24 mb-4 text-3xl  font-medium opacity-80 lg:mt-48 lg:text-5xl">
           Let&apos;s work together.
         </h1>
-        <aside className="w-full lg:w-3/12 lg:mt-16 mt-8">{work}</aside>
-        <div className="lg:mt-56 mt-28 flex justify-between items-center">
-          <Link href="mailto:adeleyetemiloluwa674@gmail.com" className="flex h-32 w-32 items-center justify-center rounded-[100%] duration-300 transition-transform hover:scale-105 border bg-[#111] font-author text-xl font-medium  uppercase text-white">
+        <aside className="mt-8 w-full lg:mt-16 lg:w-3/12">{work}</aside>
+        <div className="mt-28 flex items-center justify-between lg:mt-56">
+          <Link
+            href="mailto:adeleyetemiloluwa674@gmail.com"
+            className="flex h-32 w-32 items-center justify-center rounded-[100%] border bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-105"
+          >
             <span>Email me</span>
           </Link>
           <div className="flex">
