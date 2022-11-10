@@ -15,7 +15,7 @@ export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
       </div>
       <div className="xl:gap-12 w-11/12  lg:[&>img]:mr-0 [&>img]:mr-5 xl:w-3/12  xl:grid xl:grid-cols-2 flex ">
         {imgLinks.map((img) => (
-          <Image src={img} width={50} height={50} alt={name} key={img} className="xl:mx-5 border p-1 shadow-lg" title={img.replace("/", "").replace(".svg", "")}/>
+          <Image src={img} width={50} height={50} alt={name} key={img} className="xl:mx-5 border p-1 shadow-md" title={img.replace("/", "").replace(".svg", "")}/>
         ))}
       </div>
     </article>
