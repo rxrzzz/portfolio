@@ -1,3 +1,4 @@
+@import url("https://api.fontshare.com/v2/css?f[]=author@400,500,200,600,300,401&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
