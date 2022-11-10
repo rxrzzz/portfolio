@@ -93,10 +93,10 @@ const Home: NextPage = () => {
         <p className="ml-1 text-xl  font-medium opacity-70">
           Projects that I worked on over the past year.
         </p>
-        <HomeProjectBox />
-        <HomeProjectBox />
-        <HomeProjectBox />
-        <HomeProjectBox />
+        <HomeProjectBox name="66CH" description="" imgUrl="" />
+        <HomeProjectBox name="Shifuku Hotel" description="" imgUrl=""/>
+        <HomeProjectBox name="Misc Avatars" description="" imgUrl=""/>
+        <HomeProjectBox name="Leemao" description="" imgUrl=""/>
       </section>
     </>
   );
