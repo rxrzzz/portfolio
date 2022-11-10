@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           </h1>
           <h2 className="md:text-xl text-lg font-medium opacity-60">
             I&apos;m a fullstack software engineer based in Abeokuta and
-            I&apos;ve been writing code and pushing html div tags for the past 15
+            I&apos;ve been writing code and pushing HTML div tags for the past 15
             months.
           </h2>
           <div className="mt-4 flex">
