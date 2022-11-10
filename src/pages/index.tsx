@@ -5,12 +5,12 @@ import Link from "next/link";
 import { Toolbox } from "../components/ToolBox";
 import { useLottie } from "lottie-react";
 import devAnimation from "../../public/dev.json";
+import { HomeProjectBox } from "../components/HomeProjectBox";
 
 const Home: NextPage = () => {
-
   const options = {
     animationData: devAnimation,
-    loop: true
+    loop: true,
   };
 
   const { View } = useLottie(options);
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
-      <main className="mx-auto my-32  flex w-11/12 max-w-[90rem] flex-wrap items-center justify-between font-author">
+      <main className="mx-auto h-screen  flex w-11/12 max-w-[90rem] flex-wrap items-center justify-between font-author">
         <section className="max-w-xl lg:max-w-lg">
           <h1 className="mb-4 text-5xl font-medium md:text-6xl">
             <span className="block">Hello.</span> I&apos;m Adeleye Temiloluwa.
@@ -53,11 +53,15 @@ const Home: NextPage = () => {
             </Link>
           </div>
         </section>
-        <aside className="w-full lg:w-6/12">
-          {View}
-        </aside>
+        <aside className="w-full lg:w-6/12">{View}</aside>
       </main>
-      <section className="mx-auto mt-16 grid h-full w-11/12 max-w-[90rem] gap-4 lg:grid-cols-2 ">
+      <section className="w-11/12 max-w-[90rem] mx-auto mb-8">
+        <h1 className="text-4xl  mb-1 font-medium opacity-80">Technologies & Tools</h1>
+        <p className="ml-1 text-md  font-medium opacity-70">
+          Tools and technologies I use when making projects.
+        </p>
+      </section>
+      <section className="mx-auto grid h-full w-11/12 max-w-[90rem] gap-4 lg:grid-cols-2 ">
         <Toolbox
           name="Core"
           description="The core technologies I utilise everyday + Typescript for type safety."
@@ -83,6 +87,16 @@ const Home: NextPage = () => {
           description="Everyday tools that ease my development workflow."
           imgLinks={["/vscode.svg", "/git.svg", "/postman.svg"]}
         />
+      </section>
+      <section className="my-12  mx-auto h-[80vh] w-11/12 max-w-[90rem] font-author">
+        <h1 className="text-5xl  font-medium opacity-80">Work</h1>
+        <p className="ml-1 text-xl  font-medium opacity-70">
+          Projects that I worked on over the past year.
+        </p>
+        <HomeProjectBox />
+        <HomeProjectBox />
+        <HomeProjectBox />
+        <HomeProjectBox />
       </section>
     </>
   );
