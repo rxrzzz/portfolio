@@ -10,8 +10,8 @@ export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
   return (
     <article className=" flex flex-wrap xl:w-11/12  w-full border py-8 shadow-xl font-author justify-evenly items-center xl:mb-16 mb-8 rounded-lg ">
       <div className="xl:w-5/12 w-11/12   text-left mb-6">
-        <h1 className="text-4xl font-medium opacity-80 mb-3">{name}</h1>
-        <h2 className="text-lg font-medium opacity-60 leading-tight">{description}</h2>
+        <h1 className="lg:text-4xl text-3xl font-medium opacity-80 mb-3">{name}</h1>
+        <h2 className="lg:text-lg text-md font-medium opacity-60 leading-tight">{description}</h2>
       </div>
       <div className="xl:gap-12 w-11/12  lg:[&>img]:mr-0 [&>img]:mr-5 xl:w-3/12  xl:grid xl:grid-cols-2 flex ">
         {imgLinks.map((img) => (

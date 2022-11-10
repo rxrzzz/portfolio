@@ -58,7 +58,7 @@ const Home: NextPage = () => {
       <section className="mx-auto mt-16 grid gap-4 h-full w-11/12 max-w-[90rem] lg:grid-cols-2 ">
         <Toolbox
           name="Core"
-          description="The core technologies I utilise everyday + Typescript for type safety. 😊."
+          description="The core technologies I utilise everyday + Typescript for type safety."
           imgLinks={["/html.svg", "/css.svg", "/js.svg", "/ts.svg"]}
         />
         <Toolbox
