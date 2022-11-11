@@ -17,7 +17,7 @@ export default function Work() {
         </h1>
         <p className="text-md font-medium leading-none opacity-80 lg:text-lg text-center max-w-[300px] mt-4 mx-auto" >
           Notable projects I have worked on since I started my journey in web
-          development.{" "}
+          development.
         </p>
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -111,42 +111,7 @@ export default function Work() {
           />
         </div>
       </section>
-      <section className="mx-auto h-[80vh]  w-11/12 max-w-[90rem]  pb-24 font-author lg:my-12">
-        <h1 className="mt-20 mb-4 text-3xl  font-medium opacity-80 lg:mt-48 lg:text-5xl">
-          Let&apos;s work together.
-        </h1>
-        <aside className="mt-8 w-full lg:mt-16 lg:w-3/12">{work}</aside>
-        <p className="mt-8 text-xl font-medium underline underline-offset-1 opacity-70">
-          Check out my resume.
-        </p>
-        <div className=" flex items-center justify-between py-24 lg:mt-56">
-          <Link
-            href="mailto:adeleyetemiloluwa674@gmail.com"
-            className="flex h-28 w-28 items-center justify-center  rounded-md border bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-110"
-          >
-            <span>Email me</span>
-          </Link>
-          <div className="flex">
-            <Link href="https://github.com/temiloluwa-js">
-              <Image
-                src="/github.svg"
-                alt="Github Link"
-                width={30}
-                height={30}
-                className="mr-6"
-              />
-            </Link>
-            <Link href="https://twitter.com/_abdurrazaq_">
-              <Image
-                src="/twitter.svg"
-                alt="Twitter Link"
-                width={30}
-                height={30}
-              />
-            </Link>
-          </div>
-        </div>
-      </section>
+     
     </>
   );
 }

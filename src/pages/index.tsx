@@ -7,6 +7,7 @@ import { useLottie } from "lottie-react";
 import devAnimation from "../../public/dev.json";
 import workAnimation from "../../public/work.json";
 import { HomeProjectBox } from "../components/HomeProjectBox";
+import { Footer } from "../components/Footer";
 const Home: NextPage = () => {
   const options = {
     animationData: devAnimation,
@@ -29,8 +30,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
-      <main className="mx-auto lg:flex  h-screen w-11/12 max-w-[90rem]  items-center justify-between font-author">
-        <section className="max-w-xl lg:max-w-lg mt-40 lg:mt-0">
+      <div className="mx-auto w-11/12  max-w-[90rem] items-center justify-between pb-40 font-author  lg:flex lg:h-screen lg:pb-0">
+        <section className="mt-40 max-w-xl lg:mt-0 lg:max-w-lg">
           <h1 className="mb-4 text-5xl font-medium md:text-6xl">
             <span className="block">Hello.</span> I&apos;m Adeleye Temiloluwa.
           </h1>
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
                 alt="Github Link"
                 width={30}
                 height={30}
-                className="mr-4"
+                className="mr-4 dark:invert"
               />
             </Link>
             <Link href="https://twitter.com/_abdurrazaq_">
@@ -60,7 +61,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         <aside className="w-full lg:w-6/12">{dev}</aside>
-      </main>
+      </div>
       <section className="mx-auto mb-8 w-11/12 max-w-[90rem] text-center">
         <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl">
           Technologies
@@ -85,20 +86,21 @@ const Home: NextPage = () => {
         <Toolbox
           name="Backend"
           description="The technologies I use when dealing with projects that require server side logic."
-          imgLinks={[
-            "/nodejs.svg",
-            "/trpc.svg",
-            "/firebase.svg",
-          ]}
+          imgLinks={["/nodejs.svg", "/trpc.svg", "/firebase.svg"]}
         />
         <Toolbox
           name="Tools & Databases"
           description="Everyday tools that ease my development workflow."
-          imgLinks={["/vscode.svg", "/git.svg", "/mongoDB.svg", "/postgresql.svg"]}
+          imgLinks={[
+            "/vscode.svg",
+            "/git.svg",
+            "/mongoDB.svg",
+            "/postgresql.svg",
+          ]}
         />
       </section>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
-        <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl text-center">
+        <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl">
           Work
         </h1>
 
@@ -149,49 +151,13 @@ const Home: NextPage = () => {
         </div>
         <Link
           href="/work"
-          className=" mx-auto mt-6 rounded-md  bg-[#111] p-3 text-lg text-white transition-transform hover:scale-110"
+          className=" mx-auto mt-6 rounded-md  bg-[#111] p-3 text-xl font-medium dark:text-black dark:bg-white text-white transition-transform hover:scale-110"
         >
-          View All Projects
+          All Projects
         </Link>
       </section>
-      <section className="mx-auto h-[80vh]  w-11/12 max-w-[90rem]  pb-24 font-author lg:my-12">
-        <div className="pb-24">
-        <h1 className="mt-20 mb-4 text-3xl  font-medium opacity-80 lg:mt-48 lg:text-5xl">
-          Let&apos;s work together.
-        </h1>
-        <aside className="mt-8 w-full lg:mt-16 lg:w-3/12">{work}</aside>
-        <p className="mt-8 text-xl font-medium underline underline-offset-1 opacity-70">
-          Check out my resume.
-        </p>
-        </div>
-        <div className=" flex items-center justify-between py-2 lg:mt-40 pb-24">
-          <Link
-            href="mailto:adeleyetemiloluwa674@gmail.com"
-            className="flex h-28 w-28 items-center justify-center  rounded-md border bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-110"
-          >
-            <span>Email me</span>
-          </Link>
-          <div className="flex">
-            <Link href="https://github.com/temiloluwa-js">
-              <Image
-                src="/github.svg"
-                alt="Github Link"
-                width={30}
-                height={30}
-                className="mr-6"
-              />
-            </Link>
-            <Link href="https://twitter.com/_abdurrazaq_">
-              <Image
-                src="/twitter.svg"
-                alt="Twitter Link"
-                width={30}
-                height={30}
-              />
-            </Link>
-          </div>
-        </div>
-      </section>
+
+      <Footer />
     </>
   );
 };

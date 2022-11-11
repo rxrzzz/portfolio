@@ -50,8 +50,7 @@ export const Navbar = () => {
         href="/guestbook"
         className="flex items-center justify-center rounded-full p-1"
         style={{
-          backgroundColor:
-            location === "/guestbook" || "/guestbook?" ? "white" : "black",
+          backgroundColor: location === "/guestbook" ? "white" : "black",
         }}
       >
         <Image
@@ -61,10 +60,7 @@ export const Navbar = () => {
           src="/book.svg"
           className="p-1"
           style={{
-            filter:
-              location === "/guestbook" || "/guestbook?"
-                ? "invert(0%)"
-                : "invert(100%)",
+            filter: location === "/guestbook" ? "invert(0%)" : "invert(100%)",
           }}
         />
       </Link>

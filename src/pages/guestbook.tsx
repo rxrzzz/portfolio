@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { trpc } from "../utils/trpc";
 
 type Comment = {
@@ -11,7 +11,7 @@ export default function GuestBook() {
   const [commentList, setCommentList] = useState<Comment[]>([]);
 
   const { mutate: handleCommentSubmit } = trpc.comment.addComment.useMutation();
-  trpc.comment.getAllComments.useQuery(
+  const { data, isLoading } = trpc.comment.getAllComments.useQuery(
     { letter: "A" },
     {
       onSuccess: (data) => {
@@ -23,15 +23,21 @@ export default function GuestBook() {
 
   return (
     <>
-      <section className="mx-auto mb-8 w-11/12 mt-8 max-w-[90rem] text-center flex flex-wrap justify-center">
-        {commentList &&
-          commentList.map((data) => (
-            <>
-              <div key={data.id} className="min-w-[200px] font-author text-left p-2 border shadow-md mx-4">
-                <h1 className="text-md font-medium leading-tight opacity-90 lg:text-xl">{data.comment}</h1>
+      <h1 className="my-8 mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl">
+        GuestBook
+      </h1>
+      {isLoading && <p className="my-8 text-center font-author">Loading...</p>}
+      <section className="mx-auto mb-8 mt-8 grid w-11/12 max-w-[90rem] grid-cols-1 justify-center text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {data &&
+          data.map((data) => (
+            <Fragment key={data.id}>
+              <div className="mx-4 min-w-[200px] border p-2 text-left font-author shadow-md my-2">
+                <h1 className="text-md font-medium leading-tight opacity-90 lg:text-xl">
+                  {data.comment}
+                </h1>
                 <p>{data.updatedAt.toLocaleDateString()}</p>
               </div>
-            </>
+            </Fragment>
           ))}
       </section>
 
