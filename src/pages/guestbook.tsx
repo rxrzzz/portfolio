@@ -23,7 +23,7 @@ export default function GuestBook() {
 
   return (
     <>
-      <section className="mx-auto mb-8 w-11/12 mt-8 max-w-[90rem] text-center flex justify-center">
+      <section className="mx-auto mb-8 w-11/12 mt-8 max-w-[90rem] text-center flex flex-wrap justify-center">
         {commentList &&
           commentList.map((data) => (
             <>
