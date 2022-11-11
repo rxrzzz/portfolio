@@ -10,8 +10,8 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Example {
+model Comment {
   id        String   @id @default(cuid())
-  createdAt DateTime @default(now())
+  comment String 
   updatedAt DateTime @updatedAt
 }

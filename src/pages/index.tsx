@@ -29,8 +29,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
-      <main className="mx-auto flex  h-screen w-11/12 max-w-[90rem] flex-wrap items-center justify-between font-author">
-        <section className="max-w-xl lg:max-w-lg">
+      <main className="mx-auto lg:flex  h-screen w-11/12 max-w-[90rem]  items-center justify-between font-author">
+        <section className="max-w-xl lg:max-w-lg mt-40 lg:mt-0">
           <h1 className="mb-4 text-5xl font-medium md:text-6xl">
             <span className="block">Hello.</span> I&apos;m Adeleye Temiloluwa.
           </h1>
