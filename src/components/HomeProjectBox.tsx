@@ -4,9 +4,9 @@ import Link from "next/link";
 type HomeProjectBoxProps = {
   name: string;
   description: string;
-  imgUrl: string;
-  gitUrl: string;
-  liveUrl: string;
+  imgUrl?: string;
+  gitUrl?: string;
+  liveUrl?: string;
   headingColor: string;
   textColor: string;
   color: string;
@@ -31,13 +31,13 @@ export const HomeProjectBox = ({
     >
       <div className="mx-auto flex w-11/12 flex-col justify-center lg:w-5/12">
         <h1
-          className="mb-3 lg:text-4xl text-3xl font-medium opacity-90"
+          className="mb-3 text-3xl font-medium opacity-90 lg:text-4xl"
           style={{ color: headingColor }}
         >
           {name}
         </h1>
         <p
-          className="lg:text-lg text-md font-medium leading-tight opacity-80"
+          className="text-md font-medium leading-tight opacity-80 lg:text-lg"
           style={{ color: textColor }}
         >
           {description}
@@ -50,32 +50,36 @@ export const HomeProjectBox = ({
                 height={20}
                 width={20}
                 src="/github.svg"
-                style={{filter: invert ? "invert(100%)" : "invert(0)"}}
+                style={{ filter: invert ? "invert(100%)" : "invert(0)" }}
                 className="mr-4"
               />
             </Link>
           ) : null}
-          <Link href={liveUrl}>
-            <Image
-              alt={name}
-              height={20}
-              width={20}
-              style={{filter: invert ? "invert(100%)" : "invert(0)"}}
-              src="/eye.svg"
-              className="mr-4"
-            />
-          </Link>
+          {liveUrl ? (
+            <Link href={liveUrl}>
+              <Image
+                alt={name}
+                height={20}
+                width={20}
+                src="/eye.svg"
+                style={{ filter: invert ? "invert(100%)" : "invert(0)" }}
+                className="mr-4"
+              />
+            </Link>
+          ) : null}
         </div>
       </div>
 
-      <div className=" hidden h-full w-4/12 items-center justify-center lg:flex">
-        <Image
-          alt={name}
-          height={300}
-          width={300}
-          src={imgUrl}
-          className="w-fit object-contain"
-        />
+      <div className=" hidden h-full w-5/12 items-center justify-center lg:flex">
+        {imgUrl ? (
+          <Image
+            alt={name}
+            height={300}
+            width={300}
+            src={imgUrl}
+            className="w-fit object-contain"
+          />
+        ) : null}
       </div>
     </article>
   );

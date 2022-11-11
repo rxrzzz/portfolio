@@ -7,8 +7,6 @@ import { useLottie } from "lottie-react";
 import devAnimation from "../../public/dev.json";
 import workAnimation from "../../public/work.json";
 import { HomeProjectBox } from "../components/HomeProjectBox";
-import { Navbar } from "../components/Navbar";
-
 const Home: NextPage = () => {
   const options = {
     animationData: devAnimation,
@@ -31,7 +29,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
-      <Navbar/>
       <main className="mx-auto flex  h-screen w-11/12 max-w-[90rem] flex-wrap items-center justify-between font-author">
         <section className="max-w-xl lg:max-w-lg">
           <h1 className="mb-4 text-5xl font-medium md:text-6xl">
@@ -39,7 +36,8 @@ const Home: NextPage = () => {
           </h1>
           <h2 className="text-lg font-medium opacity-60 md:text-xl">
             I&apos;m a fullstack software engineer based in Abeokuta. I&apos;ve
-            been writing web dev code and pushing HTML div tags for the past 15 months.
+            been writing web dev code and pushing HTML div tags for the past 15
+            months.
           </h2>
           <div className="mt-4 flex">
             <Link href="https://github.com/temiloluwa-js">
@@ -64,16 +62,20 @@ const Home: NextPage = () => {
         <aside className="w-full lg:w-6/12">{dev}</aside>
       </main>
       <section className="mx-auto mb-8 w-11/12 max-w-[90rem]">
-        <h1 className="mb-1 text-3xl  font-medium opacity-80 lg:text-4xl font-author">
+        <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl">
           Technologies & Tools
         </h1>
-
       </section>
       <section className="mx-auto grid h-full w-11/12 max-w-[90rem] gap-4 lg:grid-cols-2 ">
         <Toolbox
           name="Core"
           description="The core technologies I utilise everyday + Typescript for type safety."
-          imgLinks={["/html.svg", "/css.svg", "/javascript.svg", "/typescript.svg"]}
+          imgLinks={[
+            "/HTML.svg",
+            "/CSS.svg",
+            "/javascript.svg",
+            "/typescript.svg",
+          ]}
         />
         <Toolbox
           name="Frontend"
@@ -96,8 +98,8 @@ const Home: NextPage = () => {
           imgLinks={["/vscode.svg", "/git.svg", "/postman.svg"]}
         />
       </section>
-      <section className="mt-12 flex flex-col  mx-auto w-11/12 max-w-[90rem] py-8 font-author">
-      <h1 className="mb-1 text-3xl  font-medium opacity-80 lg:text-4xl font-author">
+      <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
+        <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl">
           Work
         </h1>
 
@@ -137,29 +139,38 @@ const Home: NextPage = () => {
             color="#1CA182"
           />
           <HomeProjectBox
-            name="Leemao [WIP]"
+            name="LO-A"
             textColor="white"
             invert={true}
-            gitUrl=""
-            liveUrl="https://leemao-one.vercel.app"
-            headingColor="#269CBE"
-            description="Leemao is a website with a curation of African memes that can be downloaded or shared across all social media apps."
-            imgUrl="/leemaologo.png"
-            color="#16121A"
+            headingColor="white"
+            liveUrl="https://latifat.design"
+            description="
+           Portfolio Website for a Graphic Designer based in Manchester."
+            imgUrl="/loa.png"
+            color="#121212"
           />
         </div>
-        <Link href="" className=" p-3 mt-6 transition-transform  hover:scale-110 rounded-md mx-auto bg-[#111] text-white text-lg">View All Projects</Link>
+        <Link
+          href="/work"
+          className=" mx-auto mt-6 rounded-md  bg-[#111] p-3 text-lg text-white transition-transform hover:scale-110"
+        >
+          View All Projects
+        </Link>
       </section>
-      <section className="mx-auto pb-24  h-[80vh] w-11/12  max-w-[90rem] font-author lg:my-12">
+      <section className="mx-auto h-[80vh]  w-11/12 max-w-[90rem]  pb-24 font-author lg:my-12">
+        <div className="pb-24">
         <h1 className="mt-20 mb-4 text-3xl  font-medium opacity-80 lg:mt-48 lg:text-5xl">
           Let&apos;s work together.
         </h1>
         <aside className="mt-8 w-full lg:mt-16 lg:w-3/12">{work}</aside>
-        <p className="mt-8 underline underline-offset-1 text-xl font-medium opacity-70">Check out my resume.</p>
-        <div className=" flex items-center justify-between lg:mt-56">
+        <p className="mt-8 text-xl font-medium underline underline-offset-1 opacity-70">
+          Check out my resume.
+        </p>
+        </div>
+        <div className=" flex items-center justify-between py-2 lg:mt-40 pb-24">
           <Link
             href="mailto:adeleyetemiloluwa674@gmail.com"
-            className="flex h-32 w-32 items-center justify-center  border rounded-md bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-110"
+            className="flex h-28 w-28 items-center justify-center  rounded-md border bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-110"
           >
             <span>Email me</span>
           </Link>
