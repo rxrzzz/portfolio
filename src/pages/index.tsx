@@ -7,6 +7,7 @@ import { useLottie } from "lottie-react";
 import devAnimation from "../../public/dev.json";
 import workAnimation from "../../public/work.json";
 import { HomeProjectBox } from "../components/HomeProjectBox";
+import { Navbar } from "../components/Navbar";
 
 const Home: NextPage = () => {
   const options = {
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
+      <Navbar/>
       <main className="mx-auto flex  h-screen w-11/12 max-w-[90rem] flex-wrap items-center justify-between font-author">
         <section className="max-w-xl lg:max-w-lg">
           <h1 className="mb-4 text-5xl font-medium md:text-6xl">
@@ -62,12 +64,10 @@ const Home: NextPage = () => {
         <aside className="w-full lg:w-6/12">{dev}</aside>
       </main>
       <section className="mx-auto mb-8 w-11/12 max-w-[90rem]">
-        <h1 className="mb-1 text-3xl  font-medium opacity-80 lg:text-4xl">
+        <h1 className="mb-1 text-3xl  font-medium opacity-80 lg:text-4xl font-author">
           Technologies & Tools
         </h1>
-        <p className="text-md ml-1 font-medium  opacity-70 lg:text-lg">
-          Tools and technologies I use when making projects.
-        </p>
+
       </section>
       <section className="mx-auto grid h-full w-11/12 max-w-[90rem] gap-4 lg:grid-cols-2 ">
         <Toolbox
@@ -96,11 +96,11 @@ const Home: NextPage = () => {
           imgLinks={["/vscode.svg", "/git.svg", "/postman.svg"]}
         />
       </section>
-      <section className="my-12  mx-auto w-11/12 max-w-[90rem] py-8 font-author">
-        <h1 className="text-3xl font-medium  opacity-80 lg:text-5xl">Work</h1>
-        <p className="text-md ml-1 font-medium  opacity-70 lg:text-xl">
-          Projects that I worked on over the past year.
-        </p>
+      <section className="mt-12 flex flex-col  mx-auto w-11/12 max-w-[90rem] py-8 font-author">
+      <h1 className="mb-1 text-3xl  font-medium opacity-80 lg:text-4xl font-author">
+          Work
+        </h1>
+
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <HomeProjectBox
             name="Shifuku Hotel"
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
             color="#1CA182"
           />
           <HomeProjectBox
-            name="Leemao"
+            name="Leemao [WIP]"
             textColor="white"
             invert={true}
             gitUrl=""
@@ -148,16 +148,18 @@ const Home: NextPage = () => {
             color="#16121A"
           />
         </div>
+        <Link href="" className=" p-3 mt-6 transition-transform  hover:scale-110 rounded-md mx-auto bg-[#111] text-white text-lg">View All Projects</Link>
       </section>
-      <section className="my-2 mx-auto  h-[80vh] w-11/12  max-w-[90rem] font-author lg:my-12">
-        <h1 className="mt-24 mb-4 text-3xl  font-medium opacity-80 lg:mt-48 lg:text-5xl">
+      <section className="mx-auto pb-24  h-[80vh] w-11/12  max-w-[90rem] font-author lg:my-12">
+        <h1 className="mt-20 mb-4 text-3xl  font-medium opacity-80 lg:mt-48 lg:text-5xl">
           Let&apos;s work together.
         </h1>
         <aside className="mt-8 w-full lg:mt-16 lg:w-3/12">{work}</aside>
-        <div className="mt-28 flex items-center justify-between lg:mt-56">
+        <p className="mt-8 underline underline-offset-1 text-xl font-medium opacity-70">Check out my resume.</p>
+        <div className=" flex items-center justify-between lg:mt-56">
           <Link
             href="mailto:adeleyetemiloluwa674@gmail.com"
-            className="flex h-32 w-32 items-center justify-center rounded-[100%] border bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-105"
+            className="flex h-32 w-32 items-center justify-center  border rounded-md bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform  duration-300 hover:scale-110"
           >
             <span>Email me</span>
           </Link>
