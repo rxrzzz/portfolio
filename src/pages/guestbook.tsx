@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from "react";
+import { Footer } from "../components/Footer";
 import { trpc } from "../utils/trpc";
 
 type Comment = {
@@ -11,7 +12,7 @@ export default function GuestBook() {
   const [commentList, setCommentList] = useState<Comment[]>([]);
 
   const { mutate: handleCommentSubmit } = trpc.comment.addComment.useMutation();
-  const { data, isLoading } = trpc.comment.getAllComments.useQuery(
+  const { isLoading } = trpc.comment.getAllComments.useQuery(
     { letter: "A" },
     {
       onSuccess: (data) => {
@@ -28,10 +29,10 @@ export default function GuestBook() {
       </h1>
       {isLoading && <p className="my-8 text-center font-author">Loading...</p>}
       <section className="mx-auto mb-8 mt-8 grid w-11/12 max-w-[90rem] grid-cols-1 justify-center text-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {data &&
-          data.map((data) => (
+        {commentList &&
+          commentList.map((data) => (
             <Fragment key={data.id}>
-              <div className="mx-4 min-w-[200px] border p-2 text-left font-author shadow-md my-2">
+              <div className="mx-4 my-2 min-w-[200px] border p-2 text-left font-author shadow-md">
                 <h1 className="text-md font-medium leading-tight opacity-90 lg:text-xl">
                   {data.comment}
                 </h1>
@@ -57,6 +58,7 @@ export default function GuestBook() {
           </button>
         </div>
       </form>
+      <Footer />
     </>
   );
 }

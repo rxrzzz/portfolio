@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Toolbox } from "../components/ToolBox";
 import { useLottie } from "lottie-react";
 import devAnimation from "../../public/dev.json";
-import workAnimation from "../../public/work.json";
 import { HomeProjectBox } from "../components/HomeProjectBox";
 import { Footer } from "../components/Footer";
 const Home: NextPage = () => {
@@ -14,13 +13,7 @@ const Home: NextPage = () => {
     loop: true,
   };
 
-  const options2 = {
-    animationData: workAnimation,
-    loop: true,
-  };
-
   const { View: dev } = useLottie(options);
-  const { View: work } = useLottie(options2);
 
   return (
     <>
@@ -151,7 +144,7 @@ const Home: NextPage = () => {
         </div>
         <Link
           href="/work"
-          className=" mx-auto mt-6 rounded-md  bg-[#111] p-3 text-xl font-medium dark:text-black dark:bg-white text-white transition-transform hover:scale-110"
+          className=" mx-auto mt-6 rounded-md  bg-[#111] p-3 text-xl font-medium text-white transition-transform hover:scale-110 dark:bg-white dark:text-black"
         >
           All Projects
         </Link>

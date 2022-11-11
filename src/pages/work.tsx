@@ -1,21 +1,13 @@
-import { useLottie } from "lottie-react";
-import Image from "next/image";
-import Link from "next/link";
 import { HomeProjectBox } from "../components/HomeProjectBox";
-import workAnimation from "../../public/work.json";
+import { Footer } from "../components/Footer";
 export default function Work() {
-  const options2 = {
-    animationData: workAnimation,
-    loop: true,
-  };
-  const { View: work } = useLottie(options2);
   return (
     <>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
         <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl">
           Projects
         </h1>
-        <p className="text-md font-medium leading-none opacity-80 lg:text-lg text-center max-w-[300px] mt-4 mx-auto" >
+        <p className="text-md mx-auto mt-4 max-w-[300px] text-center font-medium leading-none opacity-80 lg:text-lg">
           Notable projects I have worked on since I started my journey in web
           development.
         </p>
@@ -111,7 +103,7 @@ export default function Work() {
           />
         </div>
       </section>
-     
+      <Footer />
     </>
   );
 }
