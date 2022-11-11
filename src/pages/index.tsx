@@ -73,12 +73,12 @@ const Home: NextPage = () => {
         <Toolbox
           name="Core"
           description="The core technologies I utilise everyday + Typescript for type safety."
-          imgLinks={["/html.svg", "/css.svg", "/js.svg", "/ts.svg"]}
+          imgLinks={["/html.svg", "/css.svg", "/javascript.svg", "/typescript.svg"]}
         />
         <Toolbox
           name="Frontend"
           description="The technologies I use when making frontend apps."
-          imgLinks={["/react.svg", "/tailwind.svg", "/next.svg"]}
+          imgLinks={["/reactjs.svg", "/tailwind.svg", "/nextjs.svg"]}
         />
         <Toolbox
           name="Backend"
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
           imgLinks={[
             "/nodejs.svg",
             "/trpc.svg",
-            "/postgres.svg",
+            "/postgresql.svg",
             "/firebase.svg",
           ]}
         />
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
             headingColor="black"
             gitUrl="https://github.com/temiloluwa-js/shifuku-client"
             liveUrl="https://shifukuhotel.vercel.app"
-            description="Shifuku Hotel is a full stack hotel application built with MongoDB, ExpressJS, ReactJS and NodeJS. Users can make bookings ..."
+            description="Shifuku Hotel is a full stack hotel application built with MongoDB, ExpressJS, ReactJS and NodeJS. Users can make bookings and admins can manage  bookings and rooms."
             imgUrl="/shifuku.png"
             color="white"
           />
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
             headingColor="white"
             gitUrl="https://github.com/temiloluwa-js/66ch-2"
             liveUrl="https://66ch.vercel.app"
-            description="66ch is a blog built with React, Tailwind CSS and Firebase. Users can read blogs,  create blogs, search posts, comment, reply ..."
+            description="66ch is a blog built with React, Tailwind CSS and Firebase. Users can read blogs,  create blogs, search posts, comment, reply and a lot more things."
             imgUrl="/66ch.png"
             color="#0337F2"
           />
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
             gitUrl="https://github.com/temiloluwa-js/misc"
             liveUrl="https://miscavatars.vercel.app"
             description="
-            An ecommerce website where Dicebear Avatars are bought. Users can add and remove avatars from cart, switch between light and dark modes and pay for avatars using the Paypal Web SDK ..."
+            An ecommerce website where Dicebear Avatars are bought. Users can add and remove avatars from cart, switch between light and dark modes and pay for avatars using the Paypal Web SDK."
             imgUrl="/miscavatars.png"
             color="#1CA182"
           />
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
             gitUrl=""
             liveUrl="https://leemao-one.vercel.app"
             headingColor="#269CBE"
-            description="Leemao is a website with a curation of African memes that can be downloaded or shared across all social media apps ..."
+            description="Leemao is a website with a curation of African memes that can be downloaded or shared across all social media apps."
             imgUrl="/leemaologo.png"
             color="#16121A"
           />
