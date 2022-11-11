@@ -61,9 +61,9 @@ const Home: NextPage = () => {
         </section>
         <aside className="w-full lg:w-6/12">{dev}</aside>
       </main>
-      <section className="mx-auto mb-8 w-11/12 max-w-[90rem]">
+      <section className="mx-auto mb-8 w-11/12 max-w-[90rem] text-center">
         <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl">
-          Technologies & Tools
+          Technologies
         </h1>
       </section>
       <section className="mx-auto grid h-full w-11/12 max-w-[90rem] gap-4 lg:grid-cols-2 ">
@@ -92,13 +92,13 @@ const Home: NextPage = () => {
           ]}
         />
         <Toolbox
-          name="Tools"
+          name="Tools & Databases"
           description="Everyday tools that ease my development workflow."
           imgLinks={["/vscode.svg", "/git.svg", "/mongoDB.svg", "/postgresql.svg"]}
         />
       </section>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
-        <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl">
+        <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl text-center">
           Work
         </h1>
 
@@ -132,8 +132,7 @@ const Home: NextPage = () => {
             headingColor="white"
             gitUrl="https://github.com/temiloluwa-js/misc"
             liveUrl="https://miscavatars.vercel.app"
-            description="
-            An ecommerce website where Dicebear Avatars are bought. Users can add and remove avatars from cart, switch between light and dark modes and pay for avatars using the Paypal Web SDK."
+            description="An ecommerce website where Dicebear Avatars are bought. Users can add and remove avatars from cart, switch between light and dark modes and pay for avatars using the Paypal Web SDK. Made with React and Tailwind."
             imgUrl="/miscavatars.png"
             color="#1CA182"
           />
@@ -143,8 +142,7 @@ const Home: NextPage = () => {
             invert={true}
             headingColor="white"
             liveUrl="https://latifat.design"
-            description="
-           Portfolio Website for a Graphic Designer based in Manchester."
+            description="Portfolio Website for a Graphic Designer based in Manchester. Made with NextJS, Tailwind and Framer Motion."
             imgUrl="/loa.png"
             color="#121212"
           />

@@ -45,13 +45,29 @@ export const Navbar = () => {
         src="/profile.svg"
         className="p-1 invert"
       />
-      <Image
-        width={30}
-        height={30}
-        alt="Guestbook"
-        src="/book.svg"
-        className="p-1 invert"
-      />
+
+      <Link
+        href="/guestbook"
+        className="flex items-center justify-center rounded-full p-1"
+        style={{
+          backgroundColor:
+            location === "/guestbook" || "/guestbook?" ? "white" : "black",
+        }}
+      >
+        <Image
+          width={30}
+          height={30}
+          alt="Guestbook"
+          src="/book.svg"
+          className="p-1"
+          style={{
+            filter:
+              location === "/guestbook" || "/guestbook?"
+                ? "invert(0%)"
+                : "invert(100%)",
+          }}
+        />
+      </Link>
     </div>
   );
 };

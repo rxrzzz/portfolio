@@ -31,13 +31,13 @@ export const HomeProjectBox = ({
     >
       <div className="mx-auto flex w-11/12 flex-col justify-center lg:w-5/12">
         <h1
-          className="mb-3 text-3xl font-medium opacity-90 lg:text-4xl"
+          className="mb-3 text-3xl font-medium opacity-90 "
           style={{ color: headingColor }}
         >
           {name}
         </h1>
         <p
-          className="text-md font-medium leading-tight opacity-80 lg:text-lg"
+          className="text-md font-medium leading-3 opacity-80 lg:text-lg"
           style={{ color: textColor }}
         >
           {description}

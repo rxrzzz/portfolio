@@ -13,7 +13,9 @@ export const commentRouter = router({
       });
       return comment;
     }),
-  getAllComments: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.comment.findMany();
-  }),
+  getAllComments: publicProcedure
+    .input(z.object({ letter: z.string() }))
+    .query(({ ctx }) => {
+      return ctx.prisma.comment.findMany();
+    }),
 });
