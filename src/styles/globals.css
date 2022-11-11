@@ -3,9 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  body {
+.dark {
     background-color: #111;
     color: white;
-  }
+    transition: background-color;
+    transition-duration: 300ms;
 }

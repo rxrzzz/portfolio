@@ -56,11 +56,11 @@ const Home: NextPage = () => {
         <aside className="w-full lg:w-6/12">{dev}</aside>
       </div>
       <section className="mx-auto mb-8 w-11/12 max-w-[90rem] text-center">
-        <h1 className="mb-1 font-author  text-3xl font-medium opacity-80 lg:text-4xl">
+      <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl dark:opacity-100">
           Technologies
         </h1>
       </section>
-      <section className="mx-auto grid h-full w-11/12 max-w-[90rem] gap-4 lg:grid-cols-2 ">
+      <section className="mx-auto mt-12 flex flex-wrap    w-11/12 max-w-[90rem] gap-8 justify-center py-8 font-author ">
         <Toolbox
           name="Core"
           description="The core technologies I utilise everyday + Typescript for type safety."
@@ -93,7 +93,7 @@ const Home: NextPage = () => {
         />
       </section>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
-        <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl">
+        <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl dark:opacity-100">
           Work
         </h1>
 

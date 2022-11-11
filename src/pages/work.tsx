@@ -4,10 +4,10 @@ export default function Work() {
   return (
     <>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
-        <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 lg:text-4xl">
+        <h1 className="mb-1 text-center  font-author text-4xl font-medium opacity-80 lg:text-6xl dark:opacity-100">
           Projects
         </h1>
-        <p className="text-md mx-auto mt-4 max-w-[300px] text-center font-medium leading-none opacity-80 lg:text-lg">
+        <p className="text-md mx-auto mt-4 mb-12 max-w-[300px] text-center font-medium leading-none opacity-80 lg:text-xl dark:opacity-100">
           Notable projects I have worked on since I started my journey in web
           development.
         </p>

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Switcher } from "./Switcher";
 
 export const Navbar = () => {
   const { asPath: location } = useRouter();
 
   return (
-    <div className="fixed bottom-8 right-0 left-0 z-10 mx-auto flex h-12 w-72 justify-evenly rounded-3xl bg-[rgb(17,17,17)] p-2 shadow-sm">
+    <div className="fixed dark:border  bottom-8 right-0 left-0 z-10 mx-auto flex h-12 w-72 justify-evenly rounded-3xl bg-[rgb(17,17,17)] p-2 shadow-sm">
       <Link
         href="/"
         className="flex items-center justify-center rounded-full p-1"
@@ -38,14 +39,6 @@ export const Navbar = () => {
         />
       </Link>
 
-      <Image
-        width={30}
-        height={30}
-        alt="About Me"
-        src="/profile.svg"
-        className="p-1 invert"
-      />
-
       <Link
         href="/guestbook"
         className="flex items-center justify-center rounded-full p-1"
@@ -64,6 +57,7 @@ export const Navbar = () => {
           }}
         />
       </Link>
+      <Switcher />
     </div>
   );
 };
