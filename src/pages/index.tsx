@@ -88,14 +88,13 @@ const Home: NextPage = () => {
           imgLinks={[
             "/nodejs.svg",
             "/trpc.svg",
-            "/postgresql.svg",
             "/firebase.svg",
           ]}
         />
         <Toolbox
           name="Tools"
           description="Everyday tools that ease my development workflow."
-          imgLinks={["/vscode.svg", "/git.svg", "/postman.svg"]}
+          imgLinks={["/vscode.svg", "/git.svg", "/mongoDB.svg", "/postgresql.svg"]}
         />
       </section>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
