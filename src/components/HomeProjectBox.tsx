@@ -37,7 +37,7 @@ export const HomeProjectBox = ({
           {name}
         </h1>
         <p
-          className="text-md font-medium leading-3 opacity-80 lg:text-lg"
+          className="text-md font-medium leading-normal max-w-[290px] opacity-80 lg:text-lg"
           style={{ color: textColor }}
         >
           {description}
