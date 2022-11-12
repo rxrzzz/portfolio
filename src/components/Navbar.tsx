@@ -7,11 +7,11 @@ export const Navbar = () => {
   const { asPath: location } = useRouter();
 
   return (
-    <div className="fixed dark:border  bottom-8 right-0 left-0 z-10 mx-auto flex h-12 w-72 justify-evenly rounded-3xl bg-[rgb(17,17,17)] p-2 shadow-sm">
+    <div className="fixed dark:border  bottom-8 right-0 left-0 z-10 mx-auto flex h-12 w-72 justify-evenly rounded-3xl bg-[#111111] p-2 shadow-sm">
       <Link
         href="/"
         className="flex items-center justify-center rounded-full p-1"
-        style={{ backgroundColor: location === "/" ? "white" : "black" }}
+        style={{ backgroundColor: location === "/" ? "white" : "#111111" }}
       >
         <Image
           width={30}
@@ -25,11 +25,11 @@ export const Navbar = () => {
       <Link
         href="/work"
         className="flex items-center justify-center rounded-full p-1"
-        style={{ backgroundColor: location === "/work" ? "white" : "black" }}
+        style={{ backgroundColor: location === "/work" ? "white" : "#111111" }}
       >
         <Image
-          width={30}
-          height={30}
+          width={36}
+          height={36}
           alt="Work"
           src="/work.svg"
           className="p-1"
@@ -43,7 +43,7 @@ export const Navbar = () => {
         href="/guestbook"
         className="flex items-center justify-center rounded-full p-1"
         style={{
-          backgroundColor: location === "/guestbook" ? "white" : "black",
+          backgroundColor: location === "/guestbook" ? "white" : "#111111",
         }}
       >
         <Image

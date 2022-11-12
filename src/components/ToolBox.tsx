@@ -19,7 +19,7 @@ export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
             {imgLinks.map((img) => (
               <div
                 key={img}
-                className="   mr-4 flex h-[60px] w-[60px] flex-col items-center  justify-center"
+                className="   mx-3 flex h-[60px] w-[60px] flex-col items-center  justify-center"
               >
                 <Image
                   src={img}

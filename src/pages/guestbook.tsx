@@ -40,8 +40,7 @@ export default function GuestBook() {
             </Fragment>
           ))}
       </section>
-
-      <form className="fixed bottom-36 right-0 left-0 z-10 mx-auto flex min-h-[100px] max-w-[400px] resize-none justify-evenly rounded-xl ">
+      <form className="sticky bottom-36 right-0 left-0 z-10 mx-auto flex min-h-[100px] max-w-[400px] resize-none justify-evenly rounded-xl ">
         <div className="relative mx-auto w-11/12">
           <textarea
             className="mx-auto  min-h-[130px] w-full resize-none border p-2 font-author text-xl font-medium opacity-90 shadow-sm dark:text-black"
