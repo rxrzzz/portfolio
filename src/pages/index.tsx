@@ -66,8 +66,8 @@ const Home: NextPage = () => {
           name="Core"
           description="The core technologies I utilise everyday + Typescript for type safety."
           imgLinks={[
-            "/Html.svg",
-            "/Css.svg",
+            "/HTML.png",
+            "/CSS.svg",
             "/javascript.svg",
             "/typescript.svg",
           ]}

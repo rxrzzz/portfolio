@@ -31,7 +31,7 @@ export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
                   title={img.replace("/", "").replace(".svg", "")}
                 />
                 <p className="font-medium capitalize opacity-90">
-                  {img.replace("/", "").replace(".svg", "")}
+                  {img.replace("/", "").replace(".svg", "").replace(".png", "")}
                 </p>
               </div>
             ))}
