@@ -27,7 +27,7 @@ export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
                   height={50}
                   alt={name}
                   key={img}
-                  className="  p-1 "
+                  className="min-w-[45px] min-h-[45px] max-h-[45px] max-w-[45px]"
                   title={img.replace("/", "").replace(".svg", "")}
                 />
                 <p className="font-medium capitalize opacity-90">
