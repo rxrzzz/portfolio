@@ -10,7 +10,7 @@ export const Switcher = () => {
   }, []);
 
   const storageTheme = storage && storage.getItem("theme");
-  const [theme, setTheme] = useState(storageTheme);
+  const [theme, setTheme] = useState(storageTheme ?? "dark");
   const [isDark, setIsDark] = useState(theme === "dark" ? true : false);
   const colorTheme = theme === "dark" ? "light" : "dark";
 
@@ -29,7 +29,7 @@ export const Switcher = () => {
       <DarkModeSwitch
         checked={isDark}
         onChange={toggleDarkMode}
-        size={30}
+        size={25}
         moonColor="white"
         sunColor="white"
       />

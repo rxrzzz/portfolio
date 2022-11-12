@@ -14,13 +14,13 @@ export default function Work() {
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <HomeProjectBox
-            name="Shifuku Hotel"
+            name="Bliss Hotel"
             invert={false}
             textColor="black"
             headingColor="black"
             gitUrl="https://github.com/temiloluwa-js/shifuku-client"
             liveUrl="https://shifukuhotel.vercel.app"
-            description="Shifuku Hotel is a full stack hotel application built with MongoDB, ExpressJS, ReactJS and NodeJS. Users can make bookings and admins can manage  bookings and rooms."
+            description="Bliss Hotel is a full stack hotel application built with MongoDB, ExpressJS, ReactJS and NodeJS. Users can make bookings and admins can manage  bookings and rooms."
             imgUrl="/shifuku.png"
             color="white"
           />

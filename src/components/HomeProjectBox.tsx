@@ -29,7 +29,7 @@ export const HomeProjectBox = ({
       style={{ backgroundColor: color }}
       className="my-2 flex w-full rounded-md border py-14 font-author lg:my-8 lg:items-center lg:justify-around"
     >
-      <div className="mx-auto flex w-11/12 flex-col justify-center lg:w-5/12">
+      <div className="mx-auto flex w-11/12 flex-col justify-center lg:w-7/12">
         <h1
           className="mb-3 text-3xl font-medium opacity-90 "
           style={{ color: headingColor }}
@@ -70,7 +70,7 @@ export const HomeProjectBox = ({
         </div>
       </div>
 
-      <div className=" hidden h-full w-5/12 items-center justify-center lg:flex">
+      <div className=" hidden h-full w-4/12 items-center justify-center lg:flex">
         {imgUrl ? (
           <Image
             alt={name}

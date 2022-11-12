@@ -15,12 +15,10 @@ export const Footer = () => {
       <h1 className="mt-20  text-3xl  font-medium opacity-80 dark:opacity-100 lg:mt-48 lg:text-5xl">
         Let&apos;s work together.
       </h1>
-      <p className="mt-1 text-xl font-medium underline underline-offset-1 opacity-70 dark:opacity-90">
-        Check out my resume.
-      </p>
+
       <aside className="mt-8 w-full lg:mt-16 lg:w-3/12">{work}</aside>
 
-      <div className=" flex items-center justify-between py-28 lg:mt-56 lg:py-8">
+      <div className=" flex items-center justify-between py-28 lg:mt-20  lg:py-8">
         <Link
           href="mailto:adeleyetemiloluwa674@gmail.com"
           className="flex h-28 w-28 items-center justify-center  rounded-md border bg-[#111] font-author text-xl font-medium uppercase text-white transition-transform duration-300 hover:scale-110  dark:bg-white dark:text-black"
