@@ -33,8 +33,7 @@ const Home: NextPage = () => {
           </h1>
           <h2 className="text-lg font-medium opacity-60 dark:opacity-80 md:text-xl">
             I&apos;m a fullstack software engineer based in Abeokuta. I&apos;ve
-            been writing web dev code and pushing HTML div tags for the past 15
-            months.
+            work with the T3 stack and MERN stack most of the time.
           </h2>
           <div className="mt-4 flex items-center">
             <Link href="https://github.com/temiloluwa-js">
