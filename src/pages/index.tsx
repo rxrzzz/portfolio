@@ -19,7 +19,10 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Temiloluwa Adeleye: Fullstack Engineer Portfolio</title>
-        <meta name="description" content="Adeleye Temiloluwa is a full stack engineer based in Abeokuta." />
+        <meta
+          name="description"
+          content="Adeleye Temiloluwa is a full stack engineer based in Abeokuta."
+        />
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
@@ -51,47 +54,54 @@ const Home: NextPage = () => {
                 height={30}
               />
             </Link>
-            <Link href="/" className="text-lg font-medium opacity-60 dark:opacity-80 md:text-xl ml-4 underline">Resume</Link>
+            <Link
+              href="/"
+              className="ml-4 text-lg font-medium underline opacity-60 dark:opacity-80 md:text-xl"
+            >
+              Resume
+            </Link>
           </div>
         </section>
         <aside className="w-full lg:w-6/12">{dev}</aside>
       </div>
+
       <section className="mx-auto mb-4 w-11/12 max-w-[90rem] text-center">
         <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 dark:opacity-100 lg:text-5xl">
           Technologies
         </h1>
-      </section>
-      <section className="mx-auto mt-1 flex w-11/12    max-w-[90rem] flex-wrap justify-center gap-8 py-8 font-author ">
-        <Toolbox
-          name="Core"
-          description="The core technologies I utilise everyday + Typescript for type safety."
-          imgLinks={[
-            "/HTML5.png",
-            "/CSS3.png",
-            "/javascript.svg",
-            "/typescript.svg",
-          ]}
-        />
-        <Toolbox
-          name="Frontend"
-          description="The technologies I use when making frontend apps."
-          imgLinks={["/reactjs.svg", "/tailwind.svg", "/nextjs.svg"]}
-        />
-        <Toolbox
-          name="Backend"
-          description="The technologies I use when dealing with projects that require server side logic."
-          imgLinks={["/nodejs.svg", "/trpc.svg", "/firebase.svg"]}
-        />
-        <Toolbox
-          name="Tools & Databases"
-          description="Everyday tools that ease my development workflow + the databases that I work with."
-          imgLinks={[
-            "/vscode.svg",
-            "/git.svg",
-            "/mongoDB.svg",
-            "/postgresql.svg",
-          ]}
-        />
+
+        <div className="mx-auto mt-10 grid  max-w-[90rem] grid-cols-1 gap-4 lg:grid-cols-2">
+          <Toolbox
+            name="Core"
+            description="The core technologies I utilise everyday + Typescript for type safety."
+            imgLinks={[
+              "/HTML5.png",
+              "/CSS3.png",
+              "/javascript.svg",
+              "/typescript.svg",
+            ]}
+          />
+          <Toolbox
+            name="Frontend"
+            description="The technologies I use when making frontend apps."
+            imgLinks={["/reactjs.svg", "/tailwind.svg", "/nextjs.svg"]}
+          />
+          <Toolbox
+            name="Backend"
+            description="The technologies I use when dealing with projects that require server side logic."
+            imgLinks={["/nodejs.svg", "/trpc.svg", "/firebase.svg"]}
+          />
+          <Toolbox
+            name="Tools & Databases"
+            description="Everyday tools that ease my development workflow + the databases that I work with."
+            imgLinks={[
+              "/vscode.svg",
+              "/git.svg",
+              "/mongoDB.svg",
+              "/postgresql.svg",
+            ]}
+          />
+        </div>
       </section>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
         <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 dark:opacity-100 lg:text-5xl">

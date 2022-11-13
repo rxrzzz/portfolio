@@ -8,7 +8,11 @@ type ToolboxProps = {
 
 export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
   return (
-    <article className=" mb-8  w-11/12 items-center   justify-evenly rounded-lg  border-2 py-8 font-author dark:bg-white dark:text-[#111] lg:w-5/12  ">
+    <article
+      className=" mx-auto   mb-8  items-center justify-evenly rounded-lg
+     border-2  py-8 font-author dark:bg-white
+dark:text-[#111] w-full   "
+    >
       <div className="mx-auto w-11/12">
         <div className="mx-auto mb-6   w-11/12 text-center xl:w-8/12">
           <h1 className="mb-1 text-3xl font-medium opacity-80">{name}</h1>
@@ -27,7 +31,7 @@ export const Toolbox = ({ name, imgLinks, description }: ToolboxProps) => {
                   height={50}
                   alt={name}
                   key={img}
-                  className="min-w-[45px] min-h-[45px] max-h-[45px] max-w-[45px]"
+                  className="max-h-[45px] min-h-[45px] min-w-[45px] max-w-[45px]"
                   title={img.replace("/", "").replace(".svg", "")}
                 />
                 <p className="font-medium capitalize opacity-90">

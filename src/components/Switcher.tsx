@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-export const Switcher = () => {
+type SwitcherProps = {
+  className: string;
+};
+export const Switcher = ({ className }: SwitcherProps) => {
   const [storage, setStorage] = useState<Storage | null>(null);
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -25,13 +28,13 @@ export const Switcher = () => {
     localStorage.setItem("theme", theme!);
   }, [theme, colorTheme]);
   return (
-    <div className=" flex items-center ml-1">
+    <div className={className}>
       <DarkModeSwitch
         checked={isDark}
         onChange={toggleDarkMode}
-        size={25}
+        size={30}
         moonColor="white"
-        sunColor="white"
+        sunColor="black"
       />
     </div>
   );
