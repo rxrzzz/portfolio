@@ -64,7 +64,7 @@ export default function Work() {
             invert={false}
             headingColor="#783517"
             liveUrl="https://cissa-website.vercel.app"
-            description="Website for The Faculty of Communication and Information Sciences in the University Of Ilorin, Nigeria. Made with NextJS, ChakraUI, TRPC and PostgreSQL."
+            description="Website for The Faculty of Communication and Information Sciences in the University Of Ilorin, Nigeria. Made with NextJS, ChakraUI, TRPC and SQL."
             imgUrl="/cis.png"
             color="#E6E6E6"
           />
@@ -86,7 +86,7 @@ export default function Work() {
             gitUrl=""
             liveUrl="https://leemao-one.vercel.app"
             headingColor="black"
-            description="My full stack 2022 Portfolio made with NextJS, TRPC, Prisma, PostgreSQL and Tailwind."
+            description="My full stack 2022 Portfolio made with NextJS and Tailwind." 
             imgUrl="/portfolio.png"
             color="white"
           />
