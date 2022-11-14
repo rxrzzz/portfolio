@@ -32,7 +32,7 @@ const Home: NextPage = () => {
             <span className="block">Hello.</span> I&apos;m Adeleye Temiloluwa.
           </h1>
           <h2 className="text-lg font-medium opacity-60 dark:opacity-80 md:text-xl">
-            I&apos;m a fullstack software engineer based in Abeokuta. I&apos;ve
+            I&apos;m a fullstack software engineer based in Abeokuta. I&apos
             work with the T3 stack and MERN stack most of the time.
           </h2>
           <div className="mt-4 flex items-center">
