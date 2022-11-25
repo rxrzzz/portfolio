@@ -82,9 +82,10 @@ export default function Work() {
             color="white"
           />
           <HomeProjectBox
-            name="Ditto [WIP]"
+            name="Dittto [WIP]"
             textColor="white"
             invert={true}
+            liveUrl="https://dittto.vercel.app/"
             gitUrl="https://github.com/temiloluwa-js/ditto"
             headingColor="#00DDB3"
             description="E-learning platform built with the T3 stack."
