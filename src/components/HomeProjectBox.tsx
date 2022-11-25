@@ -27,7 +27,7 @@ export const HomeProjectBox = ({
   return (
     <article
       style={{ backgroundColor: color }}
-      className="my-2 flex w-full rounded-md shadow-2xl dark:border py-14 font-author lg:my-8 lg:items-center lg:justify-around"
+      className="my-2 flex w-full rounded-md shadow-2xl dark:border-2 py-14 font-author lg:my-8 lg:items-center lg:justify-around"
     >
       <div className="mx-auto flex w-11/12 flex-col justify-center lg:w-7/12">
         <h1
