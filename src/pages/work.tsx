@@ -4,10 +4,10 @@ export default function Work() {
   return (
     <>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
-        <h1 className="mb-1 text-center  font-author text-4xl font-medium opacity-80 lg:text-6xl dark:opacity-100">
+        <h1 className="mb-1 text-center  font-author text-4xl font-medium opacity-80 dark:opacity-100 lg:text-6xl">
           Projects
         </h1>
-        <p className="text-md mx-auto mt-4 mb-12 max-w-[300px] text-center font-medium leading-none opacity-80 lg:text-xl dark:opacity-100">
+        <p className="text-md mx-auto mt-4 mb-12 max-w-[300px] text-center font-medium leading-none opacity-80 dark:opacity-100 lg:text-xl">
           Notable projects I have worked on since I started my journey in web
           development.
         </p>
@@ -59,6 +59,38 @@ export default function Work() {
             color="#121212"
           />
           <HomeProjectBox
+            name="CGPA Calculator"
+            textColor="white"
+            invert={true}
+            headingColor="white"
+            liveUrl="https://cgpa-rho.vercel.app"
+            gitUrl="https://github.com/temiloluwa-js/cgpa-calculator"
+            description="
+          CGPA Calculator built for my coursemates to help them with calculating their grade point averages."
+            color="#121212"
+          />
+
+          <HomeProjectBox
+            name="My 2022 Portfolio"
+            textColor="black"
+            invert={true}
+            gitUrl=""
+            liveUrl="https://leemao-one.vercel.app"
+            headingColor="black"
+            description="My full stack 2022 Portfolio made with NextJS and Tailwind."
+            imgUrl="/portfolio.png"
+            color="white"
+          />
+          <HomeProjectBox
+            name="Ditto [WIP]"
+            textColor="white"
+            invert={true}
+            gitUrl="https://github.com/temiloluwa-js/ditto"
+            headingColor="#00DDB3"
+            description="E-learning platform built with the T3 stack."
+            color="#0857A0"
+          />
+          <HomeProjectBox
             name="CIS Official Website [WIP]"
             textColor="black"
             invert={false}
@@ -79,18 +111,6 @@ export default function Work() {
             imgUrl="/leemaologo.png"
             color="#16121A"
           />
-          <HomeProjectBox
-            name="My 2022 Portfolio"
-            textColor="black"
-            invert={true}
-            gitUrl=""
-            liveUrl="https://leemao-one.vercel.app"
-            headingColor="black"
-            description="My full stack 2022 Portfolio made with NextJS and Tailwind." 
-            imgUrl="/portfolio.png"
-            color="white"
-          />
-
           <HomeProjectBox
             name="AI Baby Cat Girl Token"
             textColor="white"
