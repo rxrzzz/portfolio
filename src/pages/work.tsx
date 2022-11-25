@@ -67,7 +67,7 @@ export default function Work() {
             gitUrl="https://github.com/temiloluwa-js/cgpa-calculator"
             description="
           CGPA Calculator built for my coursemates to help them with calculating their grade point averages."
-            color="#121212"
+            color="#242424"
           />
 
           <HomeProjectBox
