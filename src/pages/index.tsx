@@ -26,14 +26,17 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
         <style></style>
       </Head>
-      <div className="mx-auto w-11/12  max-w-[90rem] items-center justify-between pb-40 font-author  lg:flex lg:h-screen lg:pb-0">
+      <div
+        className="mx-auto w-11/12  max-w-[90rem] items-center
+       justify-between pb-40 font-author  lg:flex lg:h-screen lg:pb-0"
+      >
         <section className="mt-40 max-w-xl lg:mt-0 lg:max-w-lg">
           <h1 className="mb-4 text-5xl font-medium md:text-6xl">
             <span className="block">Hello.</span> I&apos;m Adeleye Temiloluwa.
           </h1>
           <h2 className="text-lg font-medium opacity-60 dark:opacity-80 md:text-xl">
-            I am a fullstack software engineer based in Abeokuta. I
-            work with the T3 stack and MERN stack most of the time.
+            I am a fullstack software engineer based in Abeokuta. I work with
+            the T3 stack and MERN stack most of the time.
           </h2>
           <div className="mt-4 flex items-center">
             <Link href="https://github.com/temiloluwa-js">
@@ -64,45 +67,46 @@ const Home: NextPage = () => {
         <aside className="w-full lg:w-6/12">{dev}</aside>
       </div>
 
-
-
-            <section className="mx-auto mb-4 w-11/12 max-w-[90rem] text-center">
-            <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 dark:opacity-100 lg:text-5xl">
+      <section className="mx-auto mb-4 w-11/12 max-w-[90rem] text-center">
+        <h1
+          className="mb-1 text-center  font-author text-3xl font-medium
+         opacity-80 dark:opacity-100 lg:text-5xl"
+        >
           Technologies
         </h1>
 
-      <div className="mx-auto mt-10 grid  max-w-[90rem] grid-cols-1 gap-4 lg:grid-cols-2">
-        <Toolbox
-          name="Core"
-          description="The core technologies I utilise everyday + Typescript for type safety."
-          imgLinks={[
-            "/HTML5.png",
-            "/CSS3.png",
-            "/javascript.svg",
-            "/typescript.svg",
-          ]}
-        />
-        <Toolbox
-          name="Frontend"
-          description="The technologies I use when making frontend apps."
-          imgLinks={["/reactjs.svg", "/tailwind.svg", "/nextjs.svg"]}
-        />
-        <Toolbox
-          name="Backend"
-          description="The technologies I use when dealing with projects that require server side logic."
-          imgLinks={["/nodejs.svg", "/trpc.svg", "/firebase.svg"]}
-        />
-        <Toolbox
-          name="Tools & Databases"
-          description="Everyday tools that ease my development workflow + the databases that I work with."
-          imgLinks={[
-            "/vscode.svg",
-            "/git.svg",
-            "/mongoDB.svg",
-            "/postgresql.svg",
-          ]}
-        />
-      </div>
+        <div className="mx-auto mt-10 grid  max-w-[90rem] grid-cols-1 gap-4 lg:grid-cols-2">
+          <Toolbox
+            name="Core"
+            description="The core technologies I utilise everyday + Typescript for type safety."
+            imgLinks={[
+              "/HTML5.png",
+              "/CSS3.png",
+              "/javascript.svg",
+              "/typescript.svg",
+            ]}
+          />
+          <Toolbox
+            name="Frontend"
+            description="The technologies I use when making frontend apps."
+            imgLinks={["/reactjs.svg", "/tailwind.svg", "/nextjs.svg"]}
+          />
+          <Toolbox
+            name="Backend"
+            description="The technologies I use when dealing with projects that require server side logic."
+            imgLinks={["/nodejs.svg", "/trpc.svg", "/firebase.svg"]}
+          />
+          <Toolbox
+            name="Tools & Databases"
+            description="Everyday tools that ease my development workflow + the databases that I work with."
+            imgLinks={[
+              "/vscode.svg",
+              "/git.svg",
+              "/mongoDB.svg",
+              "/postgresql.svg",
+            ]}
+          />
+        </div>
       </section>
       <section className="mx-auto mt-12 flex  w-11/12 max-w-[90rem] flex-col py-8 font-author">
         <h1 className="mb-1 text-center  font-author text-3xl font-medium opacity-80 dark:opacity-100 lg:text-5xl">
