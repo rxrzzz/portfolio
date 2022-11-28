@@ -63,7 +63,7 @@ export default function Work() {
             textColor="white"
             invert={true}
             headingColor="white"
-            liveUrl="https://cgpa-rho.vercel.app"
+            liveUrl="https://cgpa-calc.vercel.app"
             gitUrl="https://github.com/temiloluwa-js/cgpa-calculator"
             description="
           CGPA Calculator built for my coursemates to help them with calculating their grade point averages."
