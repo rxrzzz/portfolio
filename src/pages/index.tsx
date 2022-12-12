@@ -56,12 +56,12 @@ const Home: NextPage = () => {
                 height={30}
               />
             </Link>
-            {/* <Link
-              href="/"
+            <Link
+              href="https://read.cv/temiloluwa"
               className="ml-4 text-lg font-medium underline opacity-60 dark:opacity-80 md:text-xl"
             >
               Resume
-            </Link> */}
+            </Link>
           </div>
         </section>
         <aside className="w-full lg:w-6/12">{dev}</aside>
