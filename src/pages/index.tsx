@@ -115,6 +115,16 @@ const Home: NextPage = () => {
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <HomeProjectBox
+            name="Homework AI"
+            invert={true}
+            textColor="white"
+            headingColor="white"
+            liveUrl="https://homework-ai.vercel.app"
+            description="Homework AI is a fullstack app built on top of OpenAI's GPT-3 API with prompts engineered to serve specific purposes tailored for students."
+            imgUrl="/hw.png"
+            color="#071820"
+          />
+          <HomeProjectBox
             name="Bliss Hotel"
             invert={false}
             textColor="black"
@@ -146,16 +156,6 @@ const Home: NextPage = () => {
             description="An ecommerce website where Dicebear Avatars are bought. Users can add and remove avatars from cart, switch between light and dark modes and pay for avatars using the Paypal Web SDK. Made with React and Tailwind."
             imgUrl="/miscavatars.png"
             color="#1CA182"
-          />
-          <HomeProjectBox
-            name="LO-A"
-            textColor="white"
-            invert={true}
-            headingColor="white"
-            liveUrl="https://latifat.design"
-            description="Portfolio Website for a Graphic Designer based in Manchester. Made with NextJS, Tailwind and Framer Motion."
-            imgUrl="/loa.png"
-            color="#121212"
           />
         </div>
         <Link

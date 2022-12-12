@@ -14,6 +14,16 @@ export default function Work() {
 
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <HomeProjectBox
+            name="Homework AI"
+            invert={true}
+            textColor="white"
+            headingColor="white"
+            liveUrl="https://homework-ai.vercel.app"
+            description="Homework AI is a fullstack app built on top of OpenAI's GPT-3 API with prompts engineered to serve specific purposes tailored for students."
+            imgUrl="/hw.png"
+            color="#071820"
+          />
+          <HomeProjectBox
             name="Bliss Hotel"
             invert={false}
             textColor="black"
