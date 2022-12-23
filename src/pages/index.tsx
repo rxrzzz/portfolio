@@ -57,7 +57,8 @@ const Home: NextPage = () => {
               />
             </Link>
             <Link
-              href="https://read.cv/temiloluwa"
+              href="/resume.pdf"
+              download
               className="ml-4 text-lg font-medium underline opacity-60 dark:opacity-80 md:text-xl"
             >
               Resume
